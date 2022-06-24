@@ -1,5 +1,5 @@
 #app.py
-import app1
+
 import aaa
 import maladie
 import detection_de_zone_irriguer
