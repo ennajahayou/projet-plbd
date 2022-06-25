@@ -13,21 +13,11 @@ def app10():
  st.write('l heure ou on va irriger est',df['hour1'][df['ET']==(min(df['ET'][df['Year']==str(start_date)]))].to_list()[0])
 import streamlit as st
 from PIL import Image, ImageOps
-import matplotlib.pyplot as plt
-import tensorflow_hub as hub
 import numpy as np
-import tensorflow as tf
 import joblib
 import tensorflow as tf
-from keras.layers import Dense, Flatten, Conv2D, MaxPooling2D
-from keras.models import Model, Sequential
 
-from tensorflow import keras
-from keras import layers,models
 from keras.models import Sequential
-from keras.layers import (
-    BatchNormalization, SeparableConv2D, MaxPooling2D, Activation, Flatten, Dropout, Dense
-)
 @st.cache(allow_output_mutation=True)
 def load_model():
    model1=tf.keras.models.load_model('model leaf deasis 97.11.h5')  
@@ -82,20 +72,12 @@ def app20():
 import streamlit as st
 from PIL import Image, ImageOps
 import matplotlib.pyplot as plt
-import tensorflow_hub as hub
 import numpy as np
 import tensorflow as tf
 import joblib
 import tensorflow as tf
-from keras.layers import Dense, Flatten, Conv2D, MaxPooling2D
-from keras.models import Model, Sequential
 
-from tensorflow import keras
-from keras import layers,models
 from keras.models import Sequential
-from keras.layers import (
-    BatchNormalization, SeparableConv2D, MaxPooling2D, Activation, Flatten, Dropout, Dense
-)
 def load_model():
   model = joblib.load("mchin.joblib")  
   return model   
